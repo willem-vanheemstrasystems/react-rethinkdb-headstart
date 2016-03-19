@@ -1,0 +1,29 @@
+{
+  "name": "react-rethinkdb",
+  "version": "0.5.4",
+  "description": "RethinkDB ReactJS integration",
+  "author": "Mike Mintz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikemintz/react-rethinkdb.git"
+  },
+  "scripts": {
+    "test": "eslint test && mocha --compilers js:babel/register",
+    "prepublish": "eslint src && babel -d dist src"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "rethinkdb-websocket-client": "^0.4.6"
+  },
+  "devDependencies": {
+    "babel": "^5.5.6",
+    "babel-core": "^5.5.6",
+    "babel-eslint": "^4.1.7",
+    "eslint": "^0.22.1",
+    "mocha": "^2.2.5"
+  }
+}
